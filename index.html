@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Filter</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="form">
+            <select class="select mr-2">
+                <option value="" class="option" selected hidden></option>
+                <option value="male" class="option">male</option>
+                <option value="female" class="option">female</option>
+            </select>
+            <input class="country" type="text" placeholder="country">
+            
+            <input
+            class="oninput1"
+            oninput="num1.value = (parseInt(amount.value))"
+            type="range"
+            name="amount"
+            value="0" 
+            min="1" 
+            max="100">
+            <output role="status" name="num1" for="people-num">0</output>
+            <input
+            class="oninput2" 
+            oninput="num2.value = (parseInt(amount2.value))"       
+            type="range"
+            name="amount2"
+            value="0" 
+            min="1" 
+            max="100">
+            <output role="status" name="num2" for="people-num">0</output>
+            <button class="button-submit" type="submit">Submit</button>
+        </form>
+        <ul class="list">
+        
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
